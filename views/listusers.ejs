@@ -1,0 +1,19 @@
+<!doctype html>
+ <html>
+  <head>
+
+    <title>User list</title>
+
+  </head>
+  <body>
+     <h1> <%=shopName%> Shop </h1>
+     <p> Here are the list of users</p>
+
+    <ul>
+      <% for(let i = 0; i < availableUserdetails.length; i++){ %>
+         <li><%= availableUserdetails[i]['username'] %> <%= availableUserdetails[i]['firstname'] %><%= availableUserdetails[i]['lastname'] %> <%= availableUserdetails[i]['email'] %> <%= availableUserdetails[i]['password'] %> </li>
+<% } %>
+ </ul>
+<a href="./">'Click here to go to the Home page'</a>
+</body>
+</html>

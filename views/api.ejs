@@ -1,0 +1,14 @@
+<!doctype html>
+  <head>
+    <title>Book list</title>
+  </head>
+  <body>
+     <h1> Bertie's Book Shop </h1>
+     <h2> Here are some of the books we sell:</h2>
+    <ul>
+      <% for(let i = 0; i < availableBooks.length; i++){ %>
+         <li><%= availableBooks[i]['name'] %> £<%= availableBooks[i]['price'] %></li> <% } %>
+    </ul>
+<a href="./">'Click here to go to the Home page'</a>
+</body>
+</html>

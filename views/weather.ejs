@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Search <%=shopName%></title>
+  </head>
+  <body>
+    <h1>Search <%=shopName%></h1>
+<form action="/weather-search" method="GET">
+<p>Enter city</p>
+<input id= "search-box" type= "text" name= "keyword" value= "default">
+<input type= "submit" value="Search">
+ </form>
+<button onClick="previous()"
+id="backward">back</button>
+<script>
+function previous(){
+window.history.back();
+}
+</script>
+    <p>Not only do we sell books, We provide the weather</p>
+    <a href="./">'Click here to go to the Home page'</a>
+  </body>
+</html> 
